@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMart</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/db0a846ed0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-cart-shopping" style="color: #FFD43B;"></i> ShopMart</a>
+        
+        <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#blogs">Blogs</a>
+         </nav>
+
+         <div class="icons">
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-user" id="login-btn"></div>
+         </div>
+
+         <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa-solid fa-search"></label>
+         </form>
+
+         <div class="shopping-cart">
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <img src="images/meat.jpg" alt="">
+                <div class="content">
+                    <h3>Meat</h3>
+                    <span class="price">N1000/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <img src="images/bread.png" alt="">
+                <div class="content">
+                    <h3>Bread</h3>
+                    <span class="price">N1000/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <img src="images/apples.png" alt="">
+                <div class="content">
+                    <h3>Apples</h3>
+                    <span class="price">N1000/-</span>
+                    <span class="quantity">Qty: 1</span>
+                </div>
+            </div>
+            <div class="total">total: N2500/- </div>
+            <a href="#" class="btn">Checkout</a>
+         </div>
+
+         <form action="" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>Forget your password<a href="#">click here</a></p>
+            <p>Don't have an account<a href="#">create now</a></p>
+            <input type="submit" value="Login now" class="btn">
+         </form>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3><span>Fresh And Organic Products For You</span></h3>
+            <p>Welcome to ShopMart, your one-stop destination for fresh and high-quality groceries delivered straight to your doorstep. 
+                Discover a wide range of products, from farm-fresh produce to everyday essentials, all at competitive prices. 
+                Shop with ease and enjoy the convenience of online grocery shopping with exceptional service you can trust.</p>
+            <a href="#products" class="shop-btn">Shop now</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/organic-plant.png" alt="">
+                <h3>Fresh And Organic</h3>
+                <p>At ShopMart, we're passionate about bringing you the freshest, high-quality groceries at competitive prices. 
+                    We source our produce directly from local farms whenever possible, ensuring the best taste and supporting sustainable practices.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="images/delivery.png" alt="">
+                <h3>Free Delivery</h3>
+                <p> Ditch the heavy bags and skip the crowded aisles! ShopMart offers a convenient online grocery shopping experience with everything you need delivered straight to your door.
+                     Browse our extensive selection of fresh produce, national brands, and local favorites, all at competitive prices. 
+                    Plus, with our free delivery on orders over NGN 10000, you can save time and money while enjoying the comfort of home.  </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="images/payment.png" alt="">
+                <h3>Easy Payment</h3>
+                <p>ShopMart makes grocery shopping a breeze with our user-friendly website and secure payment options. 
+                    Browse thousands of products from the comfort of your couch, fill your cart with fresh produce and pantry staples, and check out in just a few clicks. 
+                    We accept all major credit cards, debit cards, and popular digital wallets for a fast and convenient shopping experience. </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="images/apples.png" alt="">
+                    <h3>Fresh Apples</h3>
+                    <div class="price">NGN 500</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/bread.png" alt="">
+                    <h3>Fresh Bread</h3>
+                    <div class="price">NGN 1000</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/meat.jpg" alt="">
+                    <h3>Fresh Meat</h3>
+                    <div class="price">NGN 1500</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="images/cabbage.jpeg" alt="">
+                    <h3>Fresh Cabbage</h3>
+                    <div class="price">NGN 2000</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/green-beans.png" alt="">
+                    <h3>Green Beans</h3>
+                    <div class="price">NGN 500</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/carrot.jpeg" alt="">
+                    <h3>Fresh Carrots</h3>
+                    <div class="price">NGN 1000</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/avocado.png" alt="">
+                    <h3>Fresh Avocado</h3>
+                    <div class="price">NGN 1500</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/potatoes.jpeg" alt="">
+                    <h3>Fresh Potato</h3>
+                    <div class="price">NGN 7000</div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/vegetables.png" alt="">
+                <h3>Vegetables</h3>
+                <p>Up to 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/fruits.jpg" alt="">
+                <h3>Fresh Fruits</h3>
+                <p>Up to 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/dairy-products.jpg" alt="">
+                <h3>Dairy Products</h3>
+                <p>Up to 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="images/meat-category.jpg" alt="">
+                <h3>Fresh Meat</h3>
+                <p>Up to 45% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="review" id="reviews">
+        <h1 class="heading">Customer's <span>Review</span></h1>
+        <div class=" swiper review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="images/customer-3.jpeg" alt="">
+                    <p>"I absolutely love shopping at ShopMart Online! The website is user-friendly, making it easy to find and order what I need. 
+                        The produce and other items always arrive fresh and well-packaged. Delivery is quick and reliable, often arriving earlier than expected. 
+                        The customer service team is fantastic—they promptly address any issues or questions. 
+                        Plus, the prices are competitive, and they often have great deals. Highly recommend!"</p>
+                    <h3>Henry Esomchi</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/IMG_6722.jpeg" alt="">
+                    <p>"Good selection of products and very convenient service. I appreciate the variety of organic and gluten-free options available. 
+                        Sometimes the delivery windows are limited, especially on weekends, but the delivery staff are always courteous and efficient. 
+                        The bakery items I've ordered have been delicious and fresh. Overall, a solid choice for online grocery shopping."</p>
+                    <h3>Ogueri Anita</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/pexels-dziana-hasanbekava-7275385.jpg" alt="">
+                    <p>"I've been using ShopMart Online for the past year, and it has consistently exceeded my expectations. 
+                        The website layout is intuitive, and they offer a wide variety of products, including many local and artisanal goods. 
+                         While the site is generally reliable, there have been a few instances where certain items were out of stock. 
+                        The customer service team is knowledgeable and always willing to help. Despite minor hiccups, 
+                        this remains my go-to online grocery store, and I highly recommend it to others."</p>
+                    <h3>Nwosu Harold</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/pexels-laker-5792641.jpg" alt="">
+                    <p>"Decent online grocery store with a reasonable range of products. The quality of the meat and dairy is quite good, 
+                        but I've had some issues with the freshness of the vegetables in a few orders. Prices are a bit higher than some other online stores, 
+                        but the convenience of home delivery makes up for it. Customer service is hit or miss; some representatives are great, 
+                        while others seem indifferent. Not my top choice, but a reliable backup."</p>
+                    <h3>Okafor Cynthia</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h1 class="heading"> Our <span>Blogs</span> </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/blog-1.webp" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa-solid fa-user"></i> By Saurabh Harak </a>
+                        <a href="#"><i class="fa-solid fa-calendar"></i> March 11, 2024 </a>
+                    </div>
+                    <h3>Sustainable Eating & How to Make Eco-Conscious Food Choices</h3>
+                    <p>Food, as simple as it may seem, forms a complex web of interactions involving our health, 
+                        environment, and society, and several years ago,  I started questioning the origins of my meals —
+                        spurred by a desire to align my diet with my values of environmental stewardship and ethical responsibility.</p>
+                    <a href="https://medium.com/@sarah.mcarthur99/sustainable-eating-how-to-make-eco-conscious-food-choices-d0cfc1115ac8" class="btn"> Read More </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/blog-2.webp" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa-solid fa-user"></i> RA Lifestyle Management </a>
+                        <a href="#"><i class="fa-solid fa-calendar"></i> May 10, 2024 </a>
+                    </div>
+                    <h3>Revolutionize Your Shopping Experience: Thrive Market’s Game-Changing Approach to Healthy Living!</h3>
+                    <p>Thrive Market isn’t just a marketplace; it’s a movement — a beacon of hope in a sea of overpriced, inaccessible options. 
+                        As fervent advocates of holistic lifestyle management, dedicated to elevating every aspect of your well-being,
+                         we are thrilled share this game-changing platform that promises to transform the way you shop, live, and thrive.</p>
+                    <a href="https://medium.com/@ralifestylemanagement/revolutionize-your-shopping-experience-thrive-markets-game-changing-approach-to-healthy-living-58ff9d652d67" class="btn"> Read More </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/blog-3.webp" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa-solid fa-user"></i> By Renee Rudd </a>
+                        <a href="#"><i class="fa-solid fa-calendar"></i> January 30, 2024 </a>
+                    </div>
+                    <h3>Is Organic Really that Much Better for You?</h3>
+                    <p>While we all know that fruits and vegetables are good for you, there is some debate about whether or not organic foods are better, and if so, to what degree?
+
+                        While organic and conventional food products tend to be very similar in macros (i.e. protein, fats, carbohydrates, and fiber), they do differ a little bit when it comes to other nutrients.</p>
+                    <a href="https://medium.com/@rrudderow/is-organic-really-that-much-better-for-you-fec1a0e3b426" class="btn"> Read More </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> ShopMart <i class="fa-solid fa-cart-shopping"></i> </h3>
+                <p>At ShopMart, we're committed to providing you with the freshest and highest-quality groceries delivered straight to your door. 
+                    With a wide range of products, competitive prices, and exceptional customer service, we make online grocery shopping convenient and enjoyable. 
+                    Thank you for choosing us to be a part of your daily life.</p>
+                <div class="share">
+                    <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" ><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3> Contact Info </h3>
+               <a href="#" class="links"> <i class="fa-solid fa-phone"></i> +234 810 765 0350 </a>
+               <a href="#" class="links"> <i class="fa-solid fa-phone"></i> +234 906 071 4144 </a>
+               <a href="#" class="links"> <i class="fa-solid fa-envelope"></i> eze.pleasant001@gmail.com </a>
+               <a href="#" class="links"> <i class="fa-solid fa-map-marker-alt"></i> Enugu, Nigeria - 404005 </a>
+            </div>
+
+            <div class="box">
+                <h3> Quick Links </h3>
+               <a href="#home" class="links"> <i class="fa-solid fa-arrow-right"></i> Home </a>
+               <a href="#features" class="links"> <i class="fa-solid fa-arrow-right"></i> Features </a>
+               <a href="#products" class="links"> <i class="fa-solid fa-arrow-right"></i> Products </a>
+               <a href="#categories" class="links"> <i class="fa-solid fa-arrow-right"></i> Categories </a>
+               <a href="#reviews" class="links"> <i class="fa-solid fa-arrow-right"></i> Review </a>
+               <a href="#blogs" class="links"> <i class="fa-solid fa-arrow-right"></i> Blogs </a>
+            </div>
+
+            <div class="box">
+                <h3> Newsletter </h3>
+               <p>Subscribe For Latest Updates</p>
+               <input type="email" placeholder="your email" class="email">
+               <input type="submit" value="subscribe" class="btn">
+               <img src="" class="payment-png" alt="">
+            </div>
+
+        </div>
+
+        <div class="credits"> Created by <span>Pleasant</span> </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
