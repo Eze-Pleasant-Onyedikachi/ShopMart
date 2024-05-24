@@ -19,11 +19,8 @@ document.querySelector('#cart-btn').onclick = () => {
 let loginForm = document.querySelector('.login-form');
 
 document.querySelector('#login-btn').onclick = () => {
-    loginForm.classList.toggle('active');
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    navbar.classList.remove('active');
-}
+    window.location.href = 'signin.html'; 
+};
 
 let navbar = document.querySelector('.navbar');
 
@@ -81,4 +78,68 @@ var swiper = new Swiper(".review-slider", {
             slidesPerView: 3,
         },
     },
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const cart = [];
+    const cartContainer = document.querySelector('.shopping-cart');
+
+    // Function to update the cart display
+    const updateCartDisplay = () => {
+        cartContainer.innerHTML = '';
+        let total = 0;
+        
+        cart.forEach(item => {
+            total += item.price * item.quantity;
+            cartContainer.innerHTML += `
+                <div class="box">
+                    <i class="fa-solid fa-trash" data-name="${item.name}"></i>
+                    <img src="${item.image}" alt="">
+                    <div class="content">
+                        <h3>${item.name}</h3>
+                        <span class="price">NGN ${item.price}/-</span>
+                        <span class="quantity">Qty: ${item.quantity}</span>
+                    </div>
+                </div>
+            `;
+        });
+
+        cartContainer.innerHTML += `<div class="total">total: NGN ${total}/- </div><a href="#" class="btn">Checkout</a>`;
+    };
+
+    // Function to add item to cart
+    const addToCart = (name, price, image) => {
+        const existingItem = cart.find(item => item.name === name);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cart.push({ name, price: parseFloat(price), image, quantity: 1 });
+        }
+
+        updateCartDisplay();
+    };
+
+    // Event listener for add-to-cart buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const name = button.getAttribute('data-name');
+            const price = button.getAttribute('data-price');
+            const image = button.getAttribute('data-image');
+
+            addToCart(name, price, image);
+        });
+    });
+
+    // Event listener for remove buttons
+    cartContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('fa-trash')) {
+            const name = e.target.getAttribute('data-name');
+            const itemIndex = cart.findIndex(item => item.name === name);
+            if (itemIndex !== -1) {
+                cart.splice(itemIndex, 1);
+            }
+            updateCartDisplay();
+        }
+    });
 });
