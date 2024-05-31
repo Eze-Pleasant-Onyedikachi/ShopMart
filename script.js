@@ -86,8 +86,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update the cart display
     const updateCartDisplay = () => {
         cartContainer.innerHTML = '';
+        if(cart.length ===0){
+            cartContainer.innerHTML = '<p class="empty-cart-message">Cart is empty</p>'
+            return;
+        }
+
         let total = 0;
-        
         cart.forEach(item => {
             total += item.price * item.quantity;
             cartContainer.innerHTML += `
@@ -142,4 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCartDisplay();
         }
     });
+    // Initially display the cart as empty
+    updateCartDisplay();
 });
