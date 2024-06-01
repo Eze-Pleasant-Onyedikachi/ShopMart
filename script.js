@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
 
-        cartContainer.innerHTML += `<div class="total">total: NGN ${total}/- </div><a href="#" class="btn">Checkout</a>`;
+        cartContainer.innerHTML += `<div class="total">total: NGN ${total}/- </div><a href="payment.html" class="btn" id="pay-btn">Checkout</a>`;
     };
 
     // Function to add item to cart
