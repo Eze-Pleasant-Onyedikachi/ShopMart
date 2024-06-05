@@ -19,7 +19,7 @@ document.querySelector('#cart-btn').onclick = () => {
 let loginForm = document.querySelector('.login-form');
 
 document.querySelector('#login-btn').onclick = () => {
-    window.location.href = 'signin.html'; 
+    window.open('signup.html', '_blank');
 };
 
 let navbar = document.querySelector('.navbar');
